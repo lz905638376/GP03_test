@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./swiper.css">
+<style>
+.blue-slide{
+  background-color: lightblue;
+}
+.red-slide{
+  background-color: lightcoral;
+}
+.orange-slide{
+  background-color: orange;
+}
+</style>
+</head>
+<body>
+  <div class="swiper-container" id="swiper-container2" style="width:300px;height:300px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide blue-slide">
+        slider1</div>
+      <div class="swiper-slide red-slide">
+        slider2</div>
+      <div class="swiper-slide orange-slide">
+        slider3</div>
+    </div>
+  </div>
+
+
+<script src="./swiper.js"></script>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    //   direction: 'vertical', // 垂直切换选项
+      // direction: 'horizontal', // 水平切换选项
+      loop: true, // 循环模式选项
+
+      effect : 'cube',
+
+    //   autoplay:true,//等同于以下设置
+    // autoplay: {
+    //     delay: 2000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false,
+  })
+  
+</script>
+</body>
+</html>

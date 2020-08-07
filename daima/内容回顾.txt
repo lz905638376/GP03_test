@@ -1,0 +1,42 @@
+
+本地存储
+特征：
+    可以实现跨页面全局变量
+    存储在访问者计算机中的数据
+    按域名存储，同一个域名下多个页面共享一套本地存储
+
+cookie
+    是浏览器提供一种机制，会话跟踪技术
+    存储空间 4Kb / 50条 
+    会随着http请求自动发送到服务器
+    可以设置有效期，过期会自动删除
+    没有方便的API操作
+    pc端兼容性更好
+
+setCookie({key,val,days,domain,path})
+getCookie(key)
+removeCookie(key)
+
+H5本地存储
+    存储空间5M
+    不会随着HTTP请求发送到服务器
+    不可以设置有效期
+    有方便的API
+    移动端普及率更高
+
+localStorage.setItem(key,val)
+localStorage.getItem(key)
+localStorage.key(index)
+localStorage.length
+localStorage.clear() 清除所有数据
+localStorage.removeItem(key)
+
+localStorage  永久性存储
+sessionStorage 临时存储
+
+应用：
+    管理用户状态
+    用户个性设置
+    跟踪用户行为
+
+
